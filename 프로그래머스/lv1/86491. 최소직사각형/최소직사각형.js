@@ -3,8 +3,8 @@ function solution(sizes) {
     var maxStack = [];
     for (size of sizes)
     {
-        maxStack.push(Math.min(...size));
-        minStack.push(Math.max(...size));  
+        maxStack.push(Math.max(...size));
+        minStack.push(Math.min(...size));  
     }
    return (Math.max(...minStack)*Math.max(...maxStack));
 }
